@@ -1,19 +1,16 @@
 package nl.knmi.geoweb.converters.service;
 
-import org.springframework.boot.context.properties.EnableConfigurationProperties;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 @Service
-@EnableConfigurationProperties(ServiceProperties.class)
 public class JsonService {
 
-  private final ServiceProperties serviceProperties;
-
-  public JsonService(ServiceProperties serviceProperties) {
-    this.serviceProperties = serviceProperties;
+  @Autowired
+  public JsonService() {
   }
 
   public String message() {
-    return this.serviceProperties.getMessage();
+    return "Greetings from JsonService!";
   }
 }
