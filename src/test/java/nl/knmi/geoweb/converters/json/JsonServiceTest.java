@@ -1,4 +1,4 @@
-package nl.knmi.geoweb.converters.service;
+package nl.knmi.geoweb.converters.json;
 
 import static org.assertj.core.api.Assertions.*;
 

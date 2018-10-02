@@ -1,4 +1,4 @@
-package nl.knmi.geoweb.converters.service;
+package nl.knmi.geoweb.converters.json;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
